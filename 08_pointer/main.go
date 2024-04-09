@@ -26,4 +26,24 @@ func main() {
 	fmt.Printf("*c %v\n", *c)
 	fmt.Printf("**c %v\n", **c)
 
+	// Pass by pointer
+	d := 2
+	var n *int = &d
+
+	double(n)
+
+	fmt.Println(*n)
+	fmt.Println(d)
+
+	// Pass by reference
+	m := 2
+
+	double(&m)
+
+	fmt.Println(m)
+
+}
+
+func double(n *int) {
+	*n *= 2
 }
