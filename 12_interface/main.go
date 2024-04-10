@@ -61,5 +61,4 @@ func main() {
 
 	InsertPlayerItem(mock)
 	UpdatePlayerItem(mock)
-
 }
