@@ -70,3 +70,9 @@ VALUES ('Rayato159', 1),
 COMMIT;
 
 Transaction มันจะย้อนหลังให้ทั้งหมดใน BEGIN-COMMIT ทั้งหมดนั่นเอง
+
+## Semantic Versioning 2.0.0
+
+Major -> Version when you make incompatible API changes การที่เราเปลี่ยนแอพครั้งใหญ่
+Minor -> Feature การทำงานใหม่ๆเข้ามา
+Patch -> Feature ที่เราทำมาเราแก้ไปแล้วกี่ครั้ง
