@@ -44,4 +44,6 @@ func main() {
 	mockDb := NewMockDatabase()
 	InsertPlayerItem(mockDb)
 
+	fmt.Println("Hello World")
+
 }
