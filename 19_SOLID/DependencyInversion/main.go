@@ -50,4 +50,5 @@ func main() {
 
 func Rebase() {
 	fmt.Println("Rebase")
+	fmt.Println("Rebase 2")
 }
