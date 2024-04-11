@@ -56,3 +56,17 @@ ORDER BY level DESC;
 from players as p
 full outer join items as i
 on i.player_id = p.id;
+
+(join -> inner join, left join , right join)
+
+* Database Transaction
+BEGIN;
+
+INSERT INTO players (
+  name, level)
+VALUES ('Rayato159', 1),
+('JOSH', Error); -> Error! Database will rollback now. but auto_increment will remove the id that has created
+
+COMMIT;
+
+Transaction มันจะย้อนหลังให้ทั้งหมดใน BEGIN-COMMIT ทั้งหมดนั่นเอง
