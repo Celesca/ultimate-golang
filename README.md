@@ -38,5 +38,21 @@ Properties will see the data models and ER diagram.
 ## Postgresql
 Insensitive case query :
 
-SELECT * FROM items
+* SELECT * FROM items
 WHERE name ilike '%blade%';
+
+* ORDER BY level ASC: -> Ascending น้อยไปมาก
+ORDER BY level DESC;
+
+เปลี่ยนแปลงข้อมูลที่เคย INSERT
+
+* UPDATE players SET name = 'Noobza007' WHERE id = 3;
+
+### Caution! PostgreSQL use only '' not "" it is not the same!
+
+* DELETE FROM players WHERE id = 3;
+
+* select *
+from players as p
+full outer join items as i
+on i.player_id = p.id;
