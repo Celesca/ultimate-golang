@@ -47,3 +47,7 @@ func main() {
 	fmt.Println("Hello World")
 
 }
+
+func Rebase() {
+	fmt.Println("Rebase")
+}
