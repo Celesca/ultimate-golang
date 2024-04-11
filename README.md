@@ -1,3 +1,5 @@
+# Lecture 20 - Postgres Database
+
 ## Postgres with Docker
 
 * docker run --name learnpostgresdb -p 5432:5432 -e POSTGRES_PASSWORD=123456 -d postgres:latest
@@ -33,3 +35,8 @@ F3 to run script in DBeaver and create alt+X
 
 Properties will see the data models and ER diagram.
 
+## Postgresql
+Insensitive case query :
+
+SELECT * FROM items
+WHERE name ilike '%blade%';
